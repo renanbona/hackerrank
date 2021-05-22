@@ -23,5 +23,18 @@ function intersection(mySetA, mySetB) {
   return intersectionSet;
 }
 
+function difference(mySetA, mySetB) {
+  let differenceSet = new Set();
+
+  for (let number of mySetA) {
+    if(!mySetB.has(number)){
+      differenceSet.add(number)
+    }
+  }
+
+  return differenceSet;
+}
+
 // console.log(union(mySetA, mySetB).size);
-console.log(intersection(mySetA, mySetB).size);
+// console.log(intersection(mySetA, mySetB).size);
+console.log(difference(mySetA, mySetB).size); //https://www.hackerrank.com/challenges/basics-of-sets-and-relational-algebra-3/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
