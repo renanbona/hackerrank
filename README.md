@@ -1,2 +1,2 @@
-# hackerrank
+# Hackerrank
 My Hackerrank solutions repository
